@@ -1,0 +1,83 @@
+
+.carouselContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.img-slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out;
+    scale: .8;
+    overflow: hidden;
+}
+
+.dontMindMe{
+    color: black;
+    font-size: 20rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out;
+    scale: .8;
+    overflow: hidden;
+}
+.img-slider-btn{
+    all: unset;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 9;
+    transition: background-color 100ms ease-in-out;
+}
+
+.img-slider-btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.img-slider-btn:hover > *{
+    animation: squish 500ms ease-in-out;
+}
+
+.img-slider-btn > * {
+    stroke: rgba(0, 0, 0, 0.487);
+    fill: black;
+    width: 3rem;
+    height: 3rem;
+}
+
+@keyframes squish {
+    50% {
+        scale: 1.2 0.9;
+    }
+}
+.button{
+    all:unset;
+}
+
+.img-slider-dot-btn{
+    display: flex; 
+    gap: 2px;
+    position: relative;
+    bottom: 40px;
+    justify-content: center;
+}
+.img-slider-dot-btn > button{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}

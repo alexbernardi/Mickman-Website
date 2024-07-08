@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(54,54,54);
+    background: linear-gradient(356deg, rgba(54,54,54,1) 0%, rgba(164,164,164,1) 100%);
+    box-sizing: border-box;
+    min-height: 100vh;
+    /* filter: invert(.98) sepia(.2) saturate(4) hue-rotate(74deg) brightness(1.0) blur(0px); */
+}
+
+.no-select {
+    user-select: none;
+}
+
+.hide-cursor {
+    cursor: none;
+  }
+
+/* .homeWrapper{
+    margin: 0 auto;
+    background-color: rgba(23, 23, 23, 0.389);
+    width: 961px;
+} */
